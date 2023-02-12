@@ -6,6 +6,9 @@ html {
 body {
     color: #24292e;
     font-family: "Sawarabi Gothic";
+}
+
+.all {
     overflow-x: hidden;
 }
 
@@ -24,6 +27,10 @@ img {
 li {
     list-style: none;
     font-size: 1.2rem;
+}
+
+.wrapp {
+    transition: all 0.5s ease-in-out;
 }
 
 .burger {
@@ -69,6 +76,7 @@ li {
 }
 
 .header {
+    position: relative;
     max-width: 960px;
     display: flex;
     align-items: center;
