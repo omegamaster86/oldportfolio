@@ -26,6 +26,24 @@ li {
     font-size: 1.2rem;
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+    margin-right: 5%;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-active {
+    transform: translateX(0%) !important;
+}
+
 .wrapper {
     max-width: 960px;
     margin: 0 auto 130px auto;
@@ -160,7 +178,52 @@ li {
     margin-left: -40px;
 }
 
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@keyframes wrappFade {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @media screen and (max-width:600px) {
+
+    .header ul {
+        align-items: inherit;
+    }
+
+    .wrapp {
+        overflow-x: hidden;
+        display: flex;
+        position: absolute;
+        right: 0px;
+        top: 134px;
+        height: 150px;
+        background-color: rgba(200,200,200,0.5);
+        flex-direction: column;
+        width: 100px;
+        transform: translateX(100%);
+        z-index: 30;
+    }
+
+    .burger {
+        display: block;
+    }
 
     .wrapper {
         margin-bottom: 70px;
