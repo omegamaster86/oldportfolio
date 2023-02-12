@@ -6,6 +6,7 @@ html {
 body {
     color: #24292e;
     font-family: "Sawarabi Gothic";
+    overflow-x: hidden;
 }
 
 a {
@@ -160,5 +161,49 @@ li {
 }
 
 @media screen and (max-width:600px) {
-        
+
+    .wrapper {
+        margin-bottom: 70px;
+    }
+    
+    .site-title {
+        margin-top: 20px;
+    }
+    
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    #about ul {
+        padding-left: 0;
+        width: 90%;
+    }
+
+    #works ul {
+        flex-direction: column;
+    }
+    
+    #works ul li {
+        width: 100%;
+    }
+
+    #works ul li img {
+        width: 80%;
+    }
+
+    #news dl {
+        flex-direction: column;
+    }
+    
+    #news dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    
+    #news dd {
+        width: 100%;
+        padding-top: 0;
+        margin-left: 0;
+    }
 }
