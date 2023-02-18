@@ -184,6 +184,7 @@ li {
     border-bottom: solid 1px #c8c8c8;
     padding: 15px;
     margin-left: -40px;
+    flex-grow: 1;
 }
 
 .toggle .line1{
